@@ -1,0 +1,22 @@
+#WEB·þÎñ¶Ë¿Ú
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+#dubbo ÅäÖÃ
+spring:
+  dubbo:
+    application:
+      id: live-dubbo-provider
+      name: live-dubbo-provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    server: true
+    protocol:
+      name: dubbo
+      port: 20880
+
+log:
+  level: INFO
+  path: D:/logs/dubbo-provider
